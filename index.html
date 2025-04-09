@@ -24,10 +24,10 @@
         <div class="logo">h<span>orla</span></div>
         <nav class="nav">
           <ul>
-            <li><a href="#">section 1</a></li>
-            <li><a href="#">section 2</a></li>
-            <li><a href="#">section 3</a></li>
-            <li><a href="#">section 4 </a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
             <div class="menu close-menu">
               <i class="fa-solid fa-xmark"></i>
             </div>
@@ -79,7 +79,7 @@
         </div>
       </section>
 
-      <section class="aboutme-section">
+      <section id="about" class="aboutme-section">
         <div class="inner-aboutme container">
           <div class="heading">
             <h3>About me</h3>
@@ -105,7 +105,7 @@
         </div>
       </section>
 
-      <section class="myskill-section">
+      <section id="skills" class="myskill-section">
         <div class="inner-myskill-section container">
           <div class="heading">
             <h3>My Skills</h3>
@@ -118,13 +118,18 @@
             <div class="skill"><p>HTML</p></div>
             <div class="skill"><p>CSS</p></div>
             <div class="skill"><p>JS</p></div>
-            <div class="skill"><p>REACT</p></div>
+            <div class="skill"><p>TS</p></div>
+            <div class="skill"><p>React</p></div>
+            <div class="skill"><p>Nextjs</p></div>
+            <div class="skill"><p>Tailwind</p></div>
+            <div class="skill"><p>Shadcn</p></div>
+            <div class="skill"><p>Chakra</p></div>
             <div class="skill"><p>GIT</p></div>
           </div>
         </div>
       </section>
 
-      <section class="myportfolio-section">
+      <section id="portfolio" class="myportfolio-section">
         <div class="inner-portfolio container">
           <div class="heading">
             <h3>My Portfolio</h3>
@@ -135,6 +140,32 @@
           </div>
           <div class="cards">
             <!-- 1 -->
+            <div class="card card-row">
+              <div class="card-text">
+                <h4>ReactNote &dash; A Simple Note-Taking Application.</h4>
+                <p>
+                  ReactNote is a intuitive web app designed for seamless
+                  note-taking. It features a user-friendly interface with
+                  functionalities like note creation, search, deletion, and
+                  light/dark mode switching.
+                </p>
+
+                <a
+                  href="https://serene-sunburst-705981.netlify.app/"
+                  class="live-link"
+                >
+                  <span>Live link</span>
+                  <i class="fa-solid fa-arrow-right"></i>
+                </a>
+              </div>
+              <div class="card-img-wrapper">
+                <a href="https://serene-sunburst-705981.netlify.app/"
+                  ><img src="./assets/reactnote.jpeg" alt="kcoat"
+                /></a>
+              </div>
+            </div>
+
+            <!-- 2 -->
             <div class="card">
               <div class="card-img-wrapper">
                 <a href="https://cerulean-druid-6b3fc3.netlify.app/"
@@ -159,7 +190,7 @@
               </div>
             </div>
 
-            <!-- 2 -->
+            <!-- 3 -->
             <div class="card card-row">
               <div class="card-text">
                 <h4>Ecothrive &dash; A Renewable Energy Platform.</h4>
@@ -184,7 +215,7 @@
               </div>
             </div>
 
-            <!-- 3 -->
+            <!-- 4 -->
             <div class="card">
               <div class="card-img-wrapper">
                 <a href="https://dazzling-cascaron-f8d7bb.netlify.app/"
@@ -208,7 +239,7 @@
               </div>
             </div>
 
-            <!-- 4 -->
+            <!-- 5 -->
             <div class="card card-row">
               <div class="card-text">
                 <h4>Chat Widget&dash; Interactive Communication Platform</h4>
@@ -233,31 +264,6 @@
               </div>
             </div>
 
-            <!-- 5 -->
-            <div class="card">
-              <div class="card-img-wrapper">
-                <a href="https://stirring-melomakarona-6e18a9.netlify.app/"
-                  ><img src="./assets/dogsArena.png" alt="kcoat"
-                /></a>
-              </div>
-              <div class="card-text">
-                <h4>Dog Arena&dash; An Informational Platform</h4>
-                <p>
-                  Dog Arena is a comprehensive platform dedicated to all things
-                  dogs, featuring detailed information on various breeds and
-                  inspiring quotes.
-                </p>
-
-                <a
-                  href="https://stirring-melomakarona-6e18a9.netlify.app/"
-                  class="live-link"
-                >
-                  <span>Live link</span>
-                  <i class="fa-solid fa-arrow-right"></i>
-                </a>
-              </div>
-            </div>
-
             <a href="https://github.com/holayide" class="more">
               <p>more</p>
               <i class="fa-solid fa-arrow-right"></i>
@@ -268,7 +274,7 @@
         </div>
       </section>
 
-      <section class="contact-section">
+      <section id="contact" class="contact-section">
         <div class="inner-contact-section container">
           <div class="heading">
             <h3>Contacts</h3>
@@ -292,7 +298,7 @@
                 <i class="fa-solid fa-phone"></i>
                 <h4>Telephone</h4>
               </div>
-              <a href="tel: +2348176579175">Telephone number</a>
+              <a href="tel: +2348176579175">+2348176579175</a>
             </div>
             <div class="contact social-media">
               <div>
@@ -320,6 +326,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer-page">
       Copyright &copy; <span class="year"></span> by Olaide Alabi.
     </footer>

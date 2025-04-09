@@ -38,11 +38,14 @@ body {
 /**************************/
 
 header {
+  width: 100%;
   height: 8rem;
   padding-top: 2rem;
   background-color: var(--background-gray);
 
   position: relative;
+  /* position: fixed;
+  z-index: 100; */
 }
 
 .inner-header {
@@ -94,6 +97,8 @@ header {
   background-color: var(--background-gray);
   height: calc(100vh - 8rem);
   overflow: hidden;
+
+  /* padding-top: 10rem; */
 }
 
 .innerHero-section {
@@ -236,8 +241,8 @@ header {
 }
 
 .my-skills-wrapper .skill {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
   border-radius: 50%;
   padding: 1rem;
 
