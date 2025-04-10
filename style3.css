@@ -1,0 +1,423 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Open+Sans:wght@300;400;600;700;800&display=swap");
+
+:root {
+  --background-gray: #2e2e35;
+  --text-color: #dadada;
+  --accent: #e4aa48;
+  --light-background-grey: #34343b;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  width: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+/**************************/
+/* header */
+/**************************/
+
+header {
+  width: 100%;
+  height: 8rem;
+  padding-top: 2rem;
+  background-color: var(--background-gray);
+
+  position: relative;
+  /* position: fixed;
+  z-index: 100; */
+}
+
+.inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--text-color);
+}
+
+.logo span {
+  color: var(--accent);
+}
+
+.nav ul {
+  display: flex;
+  gap: 6.4rem;
+  font-size: 1.5rem;
+}
+
+.nav ul a:visited,
+.nav ul a:link {
+  color: var(--text-color);
+}
+
+.nav ul a:hover,
+.nav ul a:active {
+  color: var(--accent);
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--accent);
+}
+
+.menu {
+  font-size: 2rem;
+  cursor: pointer;
+  color: var(--text-color);
+
+  display: none;
+}
+
+/**************************/
+/* Hero Page */
+/**************************/
+.hero-section {
+  background-color: var(--background-gray);
+  height: calc(100vh - 8rem);
+  overflow: hidden;
+
+  /* padding-top: 10rem; */
+}
+
+.innerHero-section {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 1rem;
+}
+
+.hero-text-container {
+  color: var(--text-color);
+  padding-top: 10rem;
+}
+
+.hero-text-container > h2 {
+  font-size: 5.5rem;
+}
+
+.hero-text-container > p:first-of-type {
+  font-size: 1.8rem;
+  font-weight: 500;
+}
+
+.hero-text-container > p:nth-of-type(2) {
+  max-width: 50rem;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.hero-text-container > hr {
+  margin: 3rem 0;
+  border: 2px solid var(--accent);
+  width: 70px;
+}
+
+.btns {
+  margin-top: 3rem;
+}
+
+.btns a:visited,
+.btns a:link {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  padding: 1.5rem 3rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.btns a:hover,
+.btns a:active {
+  box-shadow: inset 0 0 0 3px var(--accent);
+}
+
+/* img */
+.hero-img-container {
+  position: relative;
+}
+
+.hero-img-container img {
+  display: block;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-img-hrs {
+  display: none;
+}
+
+/**************************/
+/*  ABOUT */
+/**************************/
+.aboutme-section {
+  background-color: var(--light-background-grey);
+  padding: 9.6rem 0;
+}
+
+.inner-aboutme,
+.inner-myskill-section,
+.inner-portfolio,
+.inner-contact-section {
+  text-align: center;
+}
+
+.heading {
+  display: inline-block;
+}
+
+.heading h3 {
+  text-align: center;
+  font-size: 1.4rem;
+  color: var(--text-color);
+  padding: 0 1rem 0.8rem;
+  letter-spacing: 0.12em;
+}
+
+.heading hr {
+  border: 1px solid var(--accent);
+}
+
+.down-icon-container {
+  margin-top: -1.3rem;
+}
+
+.down-icon-container .down-icon {
+  font-size: 1.8rem;
+  padding: 0 1rem;
+  background-color: var(--light-background-grey);
+  color: var(--accent);
+}
+
+.inner-aboutme > p {
+  margin-top: 4.8rem;
+  color: var(--text-color);
+  font-size: 1.6rem;
+  line-height: 1.8;
+  letter-spacing: 0.1rem;
+}
+
+/**************************/
+/* My Skills*/
+/**************************/
+.myskill-section {
+  background-color: var(--background-gray);
+  padding: 9.6rem 0;
+}
+
+.inner-myskill-section .down-icon-container .down-icon {
+  background-color: var(--background-gray);
+}
+
+.inner-myskill-section .my-skills-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+  margin-top: 4.8rem;
+}
+
+.my-skills-wrapper .skill {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  font-size: 1.4rem;
+  font-weight: 700;
+  border: 2px solid var(--accent);
+}
+
+/**************************/
+/* portfolio */
+/**************************/
+.myportfolio-section {
+  background-color: var(--light-background-grey);
+  padding: 9.6rem 0;
+}
+
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+
+  margin-top: 4.8rem;
+}
+
+.cards .card {
+  display: flex;
+  gap: 3rem;
+  text-align: left;
+}
+
+.card .card-img-wrapper {
+  width: 40%;
+}
+
+.cards .card img {
+  display: block;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.card-text {
+  width: 60%;
+}
+
+.card-text h4 {
+  font-size: 2rem;
+  color: var(--text-color);
+}
+
+.card-text p {
+  font-size: 1.6rem;
+  line-height: 1.7;
+  margin-top: 1rem;
+  color: var(--text-color);
+}
+
+.live-link {
+  display: inline-block;
+  margin-top: 1.5rem;
+}
+
+.live-link span {
+  color: var(--accent);
+  font-size: 1.1rem;
+}
+
+.live-link i {
+  color: var(--accent);
+  padding-left: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.inner-portfolio .more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-style: 1.4rem;
+  color: var(--accent);
+}
+
+/**************************/
+/* contact */
+/**************************/
+
+.contact-section {
+  background-color: var(--background-gray);
+  padding: 9.6rem 0;
+
+  position: relative;
+}
+
+.inner-contact-section .down-icon-container .down-icon {
+  background-color: var(--background-gray);
+}
+
+.contact-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4.8rem;
+}
+
+.contact-links > div > div:first-of-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact-links > div > div:first-of-type i {
+  color: var(--accent);
+}
+
+.contact-links > div > div:first-of-type h4 {
+  color: var(--text-color);
+}
+
+.text-icons a i {
+  padding: 0.8rem;
+  border: 1px solid var(--accent);
+  border-radius: 50%;
+}
+
+.contact a {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 1.4rem;
+  color: var(--text-color);
+}
+
+.contact .text-icons {
+  display: flex;
+  gap: 3rem;
+}
+
+/**************************/
+/* Footer */
+/**************************/
+
+.footer-page {
+  background-color: var(--background-gray);
+  border-top: 2px solid var(--accent);
+  text-align: center;
+  padding: 3.2rem;
+  font-size: 1.6rem;
+  color: var(--text-color);
+}
+
+.top-page {
+  position: relative;
+  margin: 4rem 0;
+}
+
+.top-page > a {
+  display: inline-block;
+  border: 1px solid var(--accent);
+  padding: 1rem 1.6rem;
+
+  position: absolute;
+  right: 0;
+  bottom: -5rem;
+}
+
+.top-page > a i {
+  font-size: 1.8rem;
+  color: var(--text-color);
+}
+
+.top-page > a:hover,
+.top-page > a:active {
+  background-color: var(--accent);
+}
