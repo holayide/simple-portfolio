@@ -1,6 +1,32 @@
-///////////////////////////////////////////////////
 // Set current year in footer
 document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+// Mobile menu functionality
+const menuButton = document.getElementById("menuButton");
+const mobileMenu = document.getElementById("mobileMenu");
+const closeMenu = document.getElementById("closeMenu");
+const menuOverlay = document.getElementById("menuOverlay");
+const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+function openMenu() {
+  mobileMenu.classList.add("active");
+  menuOverlay.classList.add("active");
+  document.body.classList.add("menu-open");
+}
+
+function closeMenuFunc() {
+  mobileMenu.classList.remove("active");
+  menuOverlay.classList.remove("active");
+  document.body.classList.remove("menu-open");
+}
+
+menuButton.addEventListener("click", openMenu);
+closeMenu.addEventListener("click", closeMenuFunc);
+menuOverlay.addEventListener("click", closeMenuFunc);
+
+mobileNavLinks.forEach((link) => {
+  link.addEventListener("click", closeMenuFunc);
+});
 
 // Back to top button
 const backToTopButton = document.getElementById("backToTop");
@@ -20,32 +46,4 @@ window.addEventListener("scroll", () => {
   } else {
     header.classList.remove("scrolled");
   }
-});
-
-// Mobile menu functionality
-const menuButton = document.getElementById("menuButton");
-menuButton.addEventListener("click", () => {
-  alert("Mobile menu would open here");
-});
-
-/////////////////////////////////////////////////////////////////////
-const closeMenu = document.querySelector(".close-menu");
-const openMenu = document.querySelector(".open-menu");
-const headerNav = document.querySelector(".nav");
-const navLinks = document.querySelectorAll(".nav a");
-
-// open menu
-
-openMenu.addEventListener("click", () => {
-  headerNav.classList.add("active");
-});
-
-// close menu
-const closeMenuBar = () => {
-  headerNav.classList.remove("active");
-};
-
-closeMenu.addEventListener("click", closeMenuBar);
-navLinks.forEach((navLink) => {
-  navLink.addEventListener("click", closeMenuBar);
 });
