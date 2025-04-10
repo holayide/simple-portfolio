@@ -116,7 +116,9 @@ img {
   color: var(--accent);
 }
 
+/*********************************/
 /* Header */
+/*********************************/
 header {
   position: fixed;
   top: 0;
@@ -332,7 +334,9 @@ nav {
   color: var(--accent);
 }
 
+/*********************************/
 /* Hero Section */
+/*********************************/
 .hero-section {
   min-height: 100vh;
   display: flex;
@@ -347,6 +351,7 @@ nav {
   grid-template-columns: 1fr;
   gap: 4rem;
   align-items: center;
+  padding: 2rem 0;
 }
 
 @media (min-width: 992px) {
@@ -610,7 +615,9 @@ h2 {
   object-fit: cover;
 }
 
+/*********************************/
 /* About Section */
+/*********************************/
 .aboutme-section {
   background-color: var(--light-background-grey);
   padding: 9.6rem 0;
@@ -637,7 +644,9 @@ h2 {
   box-shadow: var(--card-shadow);
 }
 
+/*********************************/
 /* Skills Section */
+/*********************************/
 .myskill-section {
   background-color: var(--background-gray);
   padding: 9.6rem 0;
@@ -684,7 +693,9 @@ h2 {
   background-color: rgba(228, 170, 72, 0.1);
 }
 
+/*********************************/
 /* Portfolio Section */
+/*********************************/
 .myportfolio-section {
   background-color: var(--light-background-grey);
   padding: 9.6rem 0;
@@ -825,7 +836,9 @@ h2 {
   transform: translateX(4px);
 }
 
+/*********************************/
 /* Contact Section */
+/*********************************/
 .contact-section {
   background-color: var(--background-gray);
   padding: 9.6rem 0;
@@ -962,7 +975,9 @@ h2 {
   transform: translateY(-2px);
 }
 
+/*********************************/
 /* Footer */
+/*********************************/
 .footer-page {
   background-color: var(--background-gray);
   border-top: 2px solid var(--accent);
